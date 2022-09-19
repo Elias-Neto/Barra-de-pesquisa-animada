@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(287.56deg, #9db1d2 0%, #8ed1bf 100%);
+}
+
+.search-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #fff;
+  height: 70px;
+  padding: 10px;
+  border-radius: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input::placeholder {
+  font-size: 1.7rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #aeaeae;
+}
+
+.search-text {
+  background: none;
+  border: 0;
+  outline: 0;
+  width: 0;
+
+  font-size: 1.6rem;
+
+  transition: 0.4s;
+}
+
+.search-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.loupe-white {
+  display: none;
+}
+
+.search-box:hover .search-text {
+  width: 32rem;
+  padding-left: 2rem;
+}
+
+.search-box:hover .search-btn {
+  background-color: #447ce7;
+}
+
+.search-box:hover .search-btn .loupe-blue {
+  display: none;
+}
+
+.search-box:hover .search-btn .loupe-white {
+  display: block;
+}
